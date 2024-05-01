@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "a4cbfb4e-b413-4215-8c2f-66851d588c1c",
+		"name": "Assign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10239246"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserByid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user/575b95b8-d80d-420c-95ab-2bed8f2bcf6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"575b95b8-d80d-420c-95ab-2bed8f2bcf6f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\":\"wasan seeseng!\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user/575b95b8-d80d-420c-95ab-2bed8f2bcf6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"575b95b8-d80d-420c-95ab-2bed8f2bcf6f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "chapter",
+			"item": [
+				{
+					"name": "getChapters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/chapter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"chapter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getChapterByid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/chapter/575b95b8-d80d-420c-95ab-2bed8f2bcf6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"chapter",
+								"575b95b8-d80d-420c-95ab-2bed8f2bcf6f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createChapter",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Monkey D. Luffy\",\r\n    \"duration\": 21,\r\n    \"studioId\": \"2ce87881-581a-4b56-9aa2-0679244a0e1d\",\r\n    \"animeId\": \"ab5fdf6e-2197-470b-8309-7b3045c6c262\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/chapter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"chapter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateChapter",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"sousou no frieren 2\",\r\n    \"duration\": 815.5,\r\n    \"studioId\": null,\r\n    \"animeId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/chapter/c1055e87-a608-43b2-9e93-60b45036b53d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"chapter",
+								"c1055e87-a608-43b2-9e93-60b45036b53d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteChapter",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/chapter/575b95b8-d80d-420c-95ab-2bed8f2bcf6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"chapter",
+								"575b95b8-d80d-420c-95ab-2bed8f2bcf6f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "studio",
+			"item": [
+				{
+					"name": "getStudio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/studio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"studio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudioByid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/studio/897bbe73-cd76-4ea7-af83-496a72fdc8f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"studio",
+								"897bbe73-cd76-4ea7-af83-496a72fdc8f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createStudio",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"M2 Animation\",\r\n    \"website\": \"https://m2animation.com/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/studio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"studio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStudio",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"M2 Animation \",\r\n    \"website\": \"https://m2animation.com/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/studio/775de86b-34a9-42de-b6c5-c746d58ed33d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"studio",
+								"775de86b-34a9-42de-b6c5-c746d58ed33d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStudio",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/studio/575b95b8-d80d-420c-95ab-2bed8f2bcf6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"studio",
+								"575b95b8-d80d-420c-95ab-2bed8f2bcf6f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "anime",
+			"item": [
+				{
+					"name": "getAnime",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/anime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"anime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAnimeByid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU0ZmIzYjQ3NzhhZWVlNDZiZmQ0N2UzNmNlNDAzZTY1ZWNkZGNmMmM3NTY3ZGQ3MDg4ZWQ0ODJkOTEwZjc0MDhjNWY0ZWJlM2ZlYTliNmU3In0.eyJhdWQiOiIyIiwianRpIjoiNTRmYjNiNDc3OGFlZWU0NmJmZDQ3ZTM2Y2U0MDNlNjVlY2RkY2YyYzc1NjdkZDcwODhlZDQ4MmQ5MTBmNzQwOGM1ZjRlYmUzZmVhOWI2ZTciLCJpYXQiOjE2MDQyODUzOTMsIm5iZiI6MTYwNDI4NTM5MywiZXhwIjoxNjM1ODIxMzkzLCJzdWIiOiIxMDY1Iiwic2NvcGVzIjpbXX0.f6cBEoU0Q7fR1oW8w9Q4zWYXgaSheJVXjwJiLDjfu4acmtdZn4evCrvywCnVg-NQX7AdEZtwcFYRahlYHFan_WfQYjE95ZXV-I8SH6YStyGF2gP3lLEz914LRwmWQYEwT5YQuV6W1qUOSxyQywckK4UpiT2Fxe4a7pDScHCrDMFDI6_8YLw2-T2j2yg2_MBlFXXLwKIlaE8zlUw7yDlDaAqggwKzOyxvoPr74nice9AnklA7kpJx_o-ztyu4DQtBNZw4LvpcBZbxO1RaIvvh2MQsabpeEPHWkqUcLyP8epb5YOVibwqHymc1OpAVNVUlCRpNQ9BoNbHNHIeMTIXeJb_xTq9L6wsVF1TZWz_99sdNeEQ9azTgvy12X7aw4aAZJtMUhqXyUrg-OoNsiD8m3TKG9Sw-V8z1cF8U-FKRe_Oi0giC3Fpd8PAq4p9-28nT9kCH20lurddtm3Ptj5fykfdiVq20g9fecyt-XnNyg_9If9_OSGRa3YO-HiYJ6px94qtiK04MwSX8W_NGfsLSy4SZ3YnCW-JzI8u4L73SxDKT_p-TUaESu5123_1QrDZWtFisu90TJs0jJl3Y6oxeBkfp6xV5AaPeQAW117kDEK8i7XpD7FJtv8IarF35P-_l3NyxbtLGhFlJEJBUzGcCvghIuUypQoHS4pkL02QB0es",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/anime/96badc73-0c2f-4063-8f90-6e9340d868f1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"anime",
+								"96badc73-0c2f-4063-8f90-6e9340d868f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAnime",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"One piece\",\r\n    \"year\": 1998,\r\n    \"studioId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/anime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"anime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAnime",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"One piece\",\r\n    \"year\": 1998,\r\n    \"studioId\": \"2ce87881-581a-4b56-9aa2-0679244a0e1d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/anime/ab5fdf6e-2197-470b-8309-7b3045c6c262",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"anime",
+								"ab5fdf6e-2197-470b-8309-7b3045c6c262"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAnime",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/anime/575b95b8-d80d-420c-95ab-2bed8f2bcf6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"anime",
+								"575b95b8-d80d-420c-95ab-2bed8f2bcf6f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "$2a$08$mGeZAs70jOL8lEZ7Gmz2u.OfUQ8.qMkwqwgwQr3A6M925eIss6YF2",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "api_key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
